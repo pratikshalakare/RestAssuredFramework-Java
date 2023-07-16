@@ -52,11 +52,7 @@ public class UserAPITestCases extends BaseTest {
 		UserPojo user = us.DataForUSerCreation();
 		username = user.getUsername();
 		Response response = given().filter(new AllureRestAssured()).filter(new RestAssuredListener())
-				.header("Content-Type", "application/json").contentType(ContentType.JSON).log().all().body(user) // passing
-																													// obj
-																													// in
-																													// request
-																													// body
+				.header("Content-Type", "application/json").contentType(ContentType.JSON).log().all().body(user) 																									
 				.put(String.format("/user/%s", listOfUser.get(0).getUsername())); // updating request
 		response.prettyPrint();
 		response.then().statusCode(200);
@@ -70,14 +66,9 @@ public class UserAPITestCases extends BaseTest {
 	public void getUserDetail() {
 		System.out.println(username);
 		logger.info("test execution started...");
-		Response response = given().filter(new AllureRestAssured()).filter(new RestAssuredListener()) // This line is
-																										// mandatory to
-																										// log the
-																										// request
-																										// details to
-																										// extent report
+		Response response = given().filter(new AllureRestAssured()).filter(new RestAssuredListener()) 
 				.header("Content-Type", "application/json").contentType(ContentType.JSON).log().all()
-				.get(String.format("/user/%s", username)); // posting request
+				.get(String.format("/user/%s", username)); 
 		response.prettyPrint();
 		Assert.assertEquals(200, response.getStatusCode());
 		logger.info("test execution ended...");
