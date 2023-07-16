@@ -1,0 +1,11 @@
+com\test\petstore_api_testing_framework\pojo\UserPojo.class
+com\test\petstore_api_testing_framework\helper\Status.class
+com\test\petstore_api_testing_framework\pojo\PetPojo.class
+com\test\petstore_api_testing_framework\helper\UserDataCreator.class
+com\test\petstore_api_testing_framework\setup\BaseTest.class
+com\test\petstore_api_testing_framework\helper\PetDataCreator.class
+com\test\petstore_api_testing_framework\utilities\Properties.class
+com\test\petstore_api_testing_framework\testcases\PetAPITestCases.class
+com\test\petstore_api_testing_framework\utilities\PropertiesReader.class
+com\test\petstore_api_testing_framework\listeners\RestAssuredListener.class
+com\test\petstore_api_testing_framework\testcases\UserAPITestCases.class
