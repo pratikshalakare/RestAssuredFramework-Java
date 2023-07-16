@@ -17,7 +17,7 @@ The solution uses Maven for build compilation & dependency management. Allure re
 - Updating user details
 - Getting user details
 
-## Instructions to Run Swagger Petstore - OpenAPI 3.0 Locally
+## Instructions to Run Swagger Petstore
 
 1. Clone this project (https://github.com/pratikshalakare/RestAssuredFramework-Java.git)
 2. Navigate to the 'PetStore-RestAssured' folder from the terminal window.
